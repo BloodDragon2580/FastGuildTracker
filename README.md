@@ -1,7 +1,7 @@
 ## English 
 ## ⚔️ FastGuildTracker
 
-A **modern, lightweight guild tracking AddOn** for *World of Warcraft: The War Within (11.0+)* that shows the **Mythic+ and Raid progress** of your **guild members** at a glance.
+A **modern, lightweight guild tracking AddOn** that shows the **Mythic+ and Raid progress** of your **guild members** at a glance.
 
 ---
 
@@ -51,7 +51,7 @@ Special thanks to the WoW UI community for inspiration & feedback!
 ## Deutsch
 ## ⚔️ FastGuildTracker
 
-Ein **modernes, schlankes Gilden-Addon** für *World of Warcraft: The War Within (11.0+)*, das dir den **Mythic+- und Raid-Fortschritt** deiner **Gildenmitglieder** auf einen Blick zeigt.
+Ein **modernes, schlankes Gilden-Addon**, das dir den **Mythic+- und Raid-Fortschritt** deiner **Gildenmitglieder** auf einen Blick zeigt.
 
 ---
 
