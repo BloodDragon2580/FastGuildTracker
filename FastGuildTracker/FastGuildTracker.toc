@@ -2,7 +2,7 @@
 ## Title: |cffd6266cFastGuildTracker|r
 ## Notes: Zeigt M+ und Raid-Fortschritt deiner Gildenmitglieder (RaiderIO benötigt) + Minimap-Button + Optionen
 ## Author: BloodDragon2580
-## Version: 1.0
+## Version: 1.1
 ## SavedVariables: FastGuildTrackerDB
 ## IconTexture: Interface\AddOns\FastGuildTracker\Media\Texture\logo
 ## OptionalDeps: LibDataBroker-1.1, LibDBIcon-1.0
