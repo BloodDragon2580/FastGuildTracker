@@ -760,6 +760,29 @@ local function setCell(fs, text)
   fs:SetText(tostring(text or ""))
 end
 
+-- Farbverlauf wie bei Raider.IO
+local function FGT_GetScoreColor(score)
+  if not tonumber(score) then return 1, 1, 1 end
+  score = tonumber(score)
+
+  if score >= 3000 then return 1.00, 0.50, 0.00    -- Orange (Elite)
+  elseif score >= 2500 then return 0.64, 0.21, 0.93 -- Lila (High)
+  elseif score >= 2000 then return 0.26, 0.59, 1.00 -- Blau
+  elseif score >= 1500 then return 0.12, 1.00, 0.00 -- Grün
+  elseif score >= 1000 then return 1.00, 1.00, 0.00 -- Gelb
+  else return 0.7, 0.7, 0.7                         -- Grau (niedrig)
+  end
+end
+
+-- Setzt die Score-Zelle mit Farbe
+local function FGT_SetScoreCell(fs, score)
+  fs:SetFontObject("QuestFontNormalSmall")
+  local s = tostring(score or "N/A")
+  fs:SetText(s)
+  local r, g, b = FGT_GetScoreColor(score)
+  fs:SetTextColor(r, g, b, 1)
+end
+
 Populate = function(frame)
   local content = frame.content
   for i = #content.rows, 1, -1 do
@@ -833,7 +856,7 @@ Populate = function(frame)
     local score    = entry.rio and entry.rio.mplusScore or "N/A"
     local raidText = (entry.rio and entry.rio.raid or "N/A") .. (entry.rio and entry.rio.raidDifficulty or "")
     r.cols[2]:SetFontObject("QuestFontNormalSmall"); r.cols[2]:SetText(tostring(runs))
-    r.cols[3]:SetFontObject("QuestFontNormalSmall"); r.cols[3]:SetText(tostring(score))
+    FGT_SetScoreCell(r.cols[3], score)
     r.cols[4]:SetFontObject("QuestFontNormalSmall"); r.cols[4]:SetText(tostring(raidText))
 
     rowIndex = rowIndex + 1
@@ -857,7 +880,7 @@ Populate = function(frame)
     r.nameBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
     r.cols[2]:SetFontObject("QuestFontNormalSmall"); r.cols[2]:SetText(tostring(me.rio.runs or "N/A"))
-    r.cols[3]:SetFontObject("QuestFontNormalSmall"); r.cols[3]:SetText(tostring(me.rio.mplusScore or "N/A"))
+    FGT_SetScoreCell(r.cols[3], me.rio.mplusScore or "N/A")
     local raidText = (me.rio.raid or "N/A") .. (me.rio.raidDifficulty or "")
     r.cols[4]:SetFontObject("QuestFontNormalSmall"); r.cols[4]:SetText(tostring(raidText))
 
