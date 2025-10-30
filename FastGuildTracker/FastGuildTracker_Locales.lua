@@ -373,8 +373,8 @@ L.ruRU = {
   debug_profile_missing  = "[DEBUG] Профиль отсутствует для:",
   debug_profile_nil_name = "[DEBUG] fullName пуст",
   debug_fullname         = "[DEBUG] fullName:",
-  debug_populate_rows    = "[DEBUG] Populate: 0 строк (нет данных гильдии/RIO)",
-  debug_tooltip_no_rio   = "[DEBUG] Tooltip: нет деталей RIO",
+  debug_populate_rows    = "[DEBUG] Заполнение: 0 строк (нет данных гильдии/RIO)",
+  debug_tooltip_no_rio   = "[DEBUG] Подсказка: нет деталей RIO",
 
   -- Region DB
   db_status_title   = "Региональная база данных Raider.IO",
