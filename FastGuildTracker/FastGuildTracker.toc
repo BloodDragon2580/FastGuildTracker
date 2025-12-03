@@ -3,7 +3,7 @@
 ## Notes: Zeigt M+ und Raid-Fortschritt deiner Gildenmitglieder (RaiderIO benötigt) + Minimap-Button + Optionen
 ## Notes-ruRU: Отображает прогресс участников Вашей гильдии в подземельях M+ и рейдах
 ## Author: BloodDragon2580
-## Version: 2.0
+## Version: 2.1
 ## SavedVariables: FastGuildTrackerDB
 ## IconTexture: Interface\AddOns\FastGuildTracker\Media\Texture\logo
 ## OptionalDeps: LibDataBroker-1.1, LibDBIcon-1.0
