@@ -1,4 +1,4 @@
-## Interface: 120000
+## Interface: 120001
 ## Title: |cffd6266cFastGuildTracker|r
 ## Notes: Zeigt M+ und Raid-Fortschritt deiner Gildenmitglieder (RaiderIO benötigt) + Minimap-Button + Optionen
 ## Notes-ruRU: Отображает прогресс участников Вашей гильдии в подземельях M+ и рейдах
